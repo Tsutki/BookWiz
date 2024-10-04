@@ -1,0 +1,180 @@
+/* Resetting styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+html, body {
+    height: 100%; /* Set height to 100% for flexbox */
+    background-image: url(background.jpeg);
+}
+
+body {
+    background-color: #FFF0D1; /* Light background color */
+    color: #3B3030; /* Dark text color */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+}
+
+.container {
+    flex: 1; /* Allow container to grow and take available space */
+}
+
+/* Header Styling */
+header {
+    background-color: #795757; /* Header background color */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #664343; /* Border color */
+}
+
+header .logo h1 {
+    font-size: 36px;
+    color: #FFF0D1; /* Light color for the title */
+    margin-bottom: 5px;
+}
+
+header .logo p {
+    font-size: 14px;
+    color: #FFF0D1; /* Light color for the tagline */
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFF0D1; /* Light color for navigation links */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Search Section */
+.search-section {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.search-section input {
+    padding: 10px;
+    width: 350px;
+    border: 2px solid #795757; /* Input border color */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-section button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #795757; /* Button background color */
+    color: #FFF0D1; /* Light text color on button */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-section button:hover {
+    background-color: #664343; /* Darker color on button hover */
+}
+
+/* Book Grid Section */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.book-card {
+    background-color: #FFF0D1; /* Card background color */
+    border: 1px solid #664343; /* Card border color */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.book-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.book-card h3 {
+    font-size: 18px;
+    color: #3B3030; /* Dark color for book title */
+    margin-bottom: 10px;
+}
+
+.book-card p {
+    font-size: 14px;
+    color: #664343; /* Medium color for author and genre */
+    margin-bottom: 8px;
+}
+
+.book-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #795757; /* Footer background color */
+    color: #FFF0D1; /* Light color for footer text */
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .social-links a {
+    color: #FFF0D1; /* Light color for social links */
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+/* Trending Books Section */
+.trending-books {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.trending-books h2 {
+    font-size: 24px;
+    color: #3B3030; /* Dark color for section title */
+    margin-bottom: 20px;
+}
+
+/* Book Grid Section */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
